@@ -64,8 +64,8 @@ function renderItem (title, width, height, isBox) {
  } else k = 'не коробка';
  if (Boolean(width) === false) width = 0;
  if (Boolean(height) === false) height = 0;
- if (Boolean(title) === false) return  ('Товар , шириной '+ Number(width) +', высотой '+ Number(height) +', '+ k +'');
- else return ('Товар '+ title +', шириной '+ Number(width) +', высотой '+ Number(height) +', '+ k +'');
+ if (Boolean(title) === false) title = '';
+ return ('Товар '+ String(title) +', шириной '+ Number(width) +', высотой '+ Number(height) +', '+ k +'');
 }
 
 /**
