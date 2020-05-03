@@ -72,7 +72,7 @@ function renderItem (title, width, height, isBox) {
 * 4. Напиши функцию oddNum с помощью цикла for
 * @param {number} max максимальное число
 * 
-* @returns {string} только не четные 1 3 5 7 9 ...max 
+* @returns {string} только не четные 1 3 5 7 9 ..max 
 */
 function oddNum (max) {
   if (max < 1) return '';
