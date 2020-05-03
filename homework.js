@@ -62,11 +62,10 @@ function renderItem (title, width, height, isBox) {
  if (isBox === true) {
    var k = 'коробка';
  } else k = 'не коробка';
- if (Boolean(width) === false) width = Boolean(width);
- if (Boolean(height) === false) height = Boolean(height);
- if (Boolean(title) === false) var s = 'Товар , шириной '+ Number(width) +', высотой '+ Number(height) +', '+ k +'';
- else s = 'Товар '+ title +', шириной '+ Number(width) +', высотой '+ Number(height) +', '+ k +'';
- return s;
+ if (Boolean(width) === false) width = 0;
+ if (Boolean(height) === false) height = 0;
+ if (Boolean(title) === false) return  ('Товар , шириной '+ Number(width) +', высотой '+ Number(height) +', '+ k +'');
+ else return ('Товар '+ title +', шириной '+ Number(width) +', высотой '+ Number(height) +', '+ k +'');
 }
 
 /**
